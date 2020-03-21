@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
+    <string name="title_demo_lab">示例页面</string>
 </resources>
