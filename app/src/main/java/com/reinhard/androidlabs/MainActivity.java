@@ -14,6 +14,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.reinhard.androidlabs.lab.DemoLabActivity;
+import com.reinhard.androidlabs.lab.MoneyInputActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         // 示例页面
         ACTIVITY_ENTITIES.add(new ActivityEntity(R.string.title_demo_lab,
                 DemoLabActivity.class));
+        // 【金额输入】页
+        ACTIVITY_ENTITIES.add(new ActivityEntity(R.string.title_money_input,
+                MoneyInputActivity.class));
     }
 
     @Override

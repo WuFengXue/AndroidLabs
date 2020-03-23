@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 【金额输入】页 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab.MoneyInputActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".lab.MoneyInputActivity">
+
+        <!-- 默认部分 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/tv_title_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/common_default"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 金额标签 -->
+            <TextView
+                android:id="@+id/tv_label_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/common_money"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/btn_submit_default"
+                app:layout_constraintLeft_toLeftOf="@id/tv_title_default"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_default" />
+
+            <!-- 金额符号 -->
+            <TextView
+                android:id="@+id/tv_money_symbol_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_rmb_symbol"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_label_default"
+                app:layout_constraintRight_toLeftOf="@id/et_money_default" />
+
+            <!-- 金额输入 -->
+            <EditText
+                android:id="@+id/et_money_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="@string/money_input_hint"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_label_default"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!-- 提交按钮 -->
+            <Button
+                android:id="@+id/btn_submit_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:text="@string/common_submit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 修改字符串部分 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_modify_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/cl_default">
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/tv_title_modify_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/money_input_modify_string"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 金额标签 -->
+            <TextView
+                android:id="@+id/tv_label_modify_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/common_money"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/btn_submit_modify_string"
+                app:layout_constraintLeft_toLeftOf="@id/tv_title_modify_string"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_modify_string" />
+
+            <!-- 金额输入 -->
+            <EditText
+                android:id="@+id/et_money_modify_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="@string/money_input_hint"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_label_modify_string"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!-- 提交按钮 -->
+            <Button
+                android:id="@+id/btn_submit_modify_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:text="@string/common_submit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 修改提示部分 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_modify_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/cl_modify_string">
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/tv_title_modify_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/money_input_modify_hint"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 金额标签 -->
+            <TextView
+                android:id="@+id/tv_label_modify_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/common_money"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/btn_submit_modify_hint"
+                app:layout_constraintLeft_toLeftOf="@id/tv_title_modify_hint"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_modify_hint" />
+
+            <!-- 金额符号 -->
+            <TextView
+                android:id="@+id/tv_money_symbol_modify_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_rmb_symbol"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_label_modify_hint"
+                app:layout_constraintRight_toLeftOf="@id/et_money_modify_hint" />
+
+            <!-- 金额输入 -->
+            <EditText
+                android:id="@+id/et_money_modify_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="@string/money_input_hint"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_label_modify_hint"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <!-- 提交按钮 -->
+            <Button
+                android:id="@+id/btn_submit_modify_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorAccent"
+                android:text="@string/common_submit"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 占位控件，让滚动条可以滚动到更底部 -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_modify_hint" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -20,6 +20,11 @@
 
         <!-- 示例页面 -->
         <activity android:name=".lab.DemoLabActivity" />
+
+        <!-- 【金额输入】页 -->
+        <activity
+            android:name=".lab.MoneyInputActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
     </application>
 
 </manifest>

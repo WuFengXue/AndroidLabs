@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
     <string name="title_demo_lab">示例页面</string>
+    <string name="title_money_input">金额输入</string>
+
+    <string name="money_input_hint">请输入金额</string>
+    <string name="money_input_modify_string">修改字符串</string>
+    <string name="money_input_modify_hint">修改提示</string>
+    <string name="money_input_toast_format">输入金额：%1$.2f</string>
 </resources>
