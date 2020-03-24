@@ -6,6 +6,10 @@
 
 ## 金额输入
 
+### 博文：[android 【符号+金额】输入（右对齐）的一种简单实现](https://wufengxue.github.io/2020/03/24/android-money-input.html)
+
+### [源码：MoneyInputActivity](https://github.com/WuFengXue/AndroidLabs/blob/master/app/src/main/java/com/reinhard/androidlabs/lab/MoneyInputActivity.java)
+
 ### 产品需求
 
 * 无输入时，提示：请输入金额
