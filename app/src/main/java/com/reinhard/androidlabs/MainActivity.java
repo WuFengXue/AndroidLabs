@@ -15,6 +15,7 @@ import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.reinhard.androidlabs.lab.DemoLabActivity;
 import com.reinhard.androidlabs.lab.MoneyInputActivity;
+import com.reinhard.androidlabs.lab.threeD.ThreeDMovementActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         // 【金额输入】页
         ACTIVITY_ENTITIES.add(new ActivityEntity(R.string.title_money_input,
                 MoneyInputActivity.class));
+        // 【球形移动】页
+        ACTIVITY_ENTITIES.add(new ActivityEntity(R.string.title_3d_move,
+                ThreeDMovementActivity.class));
     }
 
     @Override

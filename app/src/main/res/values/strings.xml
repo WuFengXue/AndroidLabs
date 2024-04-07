@@ -2,6 +2,7 @@
     <string name="app_name">AndroidLabs</string>
     <string name="title_demo_lab">示例页面</string>
     <string name="title_money_input">金额输入</string>
+    <string name="title_3d_move">球形移动</string>
 
     <string name="money_input_hint">请输入金额</string>
     <string name="money_input_modify_string">修改字符串</string>
